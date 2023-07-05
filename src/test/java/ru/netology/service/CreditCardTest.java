@@ -17,7 +17,7 @@ public class CreditCardTest {
     @Test
     void shouldSignCorrect() {
 
-        SelenideElement form = $("[class]");
+        SelenideElement form = $("[form]");
         form.$("[data-test-id=name] input").setValue("Саня Белый");
         form.$("[data-test-id=phone] input").setValue("+79101112222");
         form.$("[data-test-id=agreement]").click();
